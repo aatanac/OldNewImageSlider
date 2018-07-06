@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1C7A98D820EFF4990045BA80 /* OldNewImageSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7A98D620EFF4990045BA80 /* OldNewImageSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7A98DF20EFF4A90045BA80 /* OldNewImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A98DE20EFF4A90045BA80 /* OldNewImageSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C7A98D320EFF4990045BA80 /* OldNewImageSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OldNewImageSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7A98D620EFF4990045BA80 /* OldNewImageSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldNewImageSlider.h; sourceTree = "<group>"; };
 		1C7A98D720EFF4990045BA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7A98DE20EFF4A90045BA80 /* OldNewImageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNewImageSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				1C7A98D620EFF4990045BA80 /* OldNewImageSlider.h */,
+				1C7A98DE20EFF4A90045BA80 /* OldNewImageSlider.swift */,
 				1C7A98D720EFF4990045BA80 /* Info.plist */,
 			);
 			path = OldNewImageSlider;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					1C7A98D220EFF4990045BA80 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7A98DF20EFF4A90045BA80 /* OldNewImageSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		1C7A98DC20EFF4990045BA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aatanac.OldNewImageSlider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		1C7A98DD20EFF4990045BA80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
